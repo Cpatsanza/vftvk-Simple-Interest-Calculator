@@ -34,7 +34,5 @@ function validateForm()
     principal.focus();
     return false;
   }
-    //if all is well return true.
-    alert("Form validation is successful");
-    return true;
+    
 }
