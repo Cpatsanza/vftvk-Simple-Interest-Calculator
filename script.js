@@ -29,9 +29,11 @@ function validateForm()
     // code validates input on form
   var principal = document.getElementById("principal").value;
 
-  if (principal <= 0) {
+  if (principal <= 0 || principal.value=="") {
     alert("Enter a positive number");
-
+    principal.focus();
     return false;
   }
+//if all is well return true.
+    return true;
 }
